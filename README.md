@@ -8,22 +8,22 @@ Built upon the **Swin Transformer** backbone, the framework adopts a **shared Sw
 
 ### 🧩 Overall Framework
 <center>
-<img src="figures/overall_framework.png" width="85%" alt="TASC-SwinMT Overall Framework">
+<img src="overall_framework——original.png" width="85%" alt="TASC-SwinMT Overall Framework">
 </center>
 
 - **TALA (Task-Aware Lightweight Adapter)**: Captures spatial dual-bottleneck features and global frequency-domain information to generate task-adaptive representations.
   <center>
-  <img src="figures/TALA_module.png" width="70%" alt="TALA Module Architecture">
+  <img src="TALA.png" width="70%" alt="TALA Module Architecture">
   </center>
 
 - **MSTAF (Multi-Scale Task Alignment Fusion)**: Aligns cross-level feature distributions via bidirectional cross-attention, multi-scale spatial extraction, and frequency enhancement.
   <center>
-  <img src="figures/MSTAF_module.png" width="70%" alt="MSTAF Module Architecture">
+  <img src="MSTAF.png" width="70%" alt="MSTAF Module Architecture">
   </center>
 
 - **CTCI (Cross-Task Collaborative Interaction)**: Enables fine-grained cross-task feature interaction by integrating spatial extraction, frequency alignment, and dynamic gating fusion.
   <center>
-  <img src="figures/CTCI_module.png" width="70%" alt="CTCI Module Architecture">
+  <img src="CTCI.png" width="70%" alt="CTCI Module Architecture">
   </center>
 
 A **learnable dynamic multi-task loss** is employed to adaptively balance pixel-level interpolation reconstruction and segmentation classification optimization, avoiding training bias toward either task.
