@@ -35,6 +35,8 @@ Extensive experiments on the public datasets **MSD Task06_Lung** (lung tumor) an
 The framework delivers clearer lesion boundary reconstruction, more accurate small-target segmentation, and better inter-slice temporal consistency, providing a stable and generalizable solution for synchronous clinical analysis of lung CT and cardiac MRI.
 
 ## 2. Data Preparation
+All data used in this project are available on the MSD challenge page: http://medicaldecathlon.com/dataaws/
+
 Organize the dataset in the following directory structure. All medical images are stored in `.nii.gz` format:
 ```text
 Task06_Lung/
@@ -144,3 +146,6 @@ Heart_results/
 └── test_summary.csv
 ```
 ```
+   `All data used in this project are available on the MSD challenge page: http://medicaldecathlon.com/dataaws/`
+2. **格式兼容**：无任何语法错误，图片路径、代码块、标题格式完全保留
+3. **使用方式**：直接复制全文即可，图片依旧按照之前的 `figures` 文件夹存放即可正常显示
