@@ -8,7 +8,7 @@ Built upon the **Swin Transformer** backbone, the framework adopts a **shared Sw
 
 ### 🧩 Overall Framework
 <center>
-<img src="overall_framework——original.png" width="85%" alt="TASC-SwinMT Overall Framework">
+<img src="overall_framework_original.png" width="85%" alt="TASC-SwinMT Overall Framework">
 </center>
 
 - **TALA (Task-Aware Lightweight Adapter)**: Captures spatial dual-bottleneck features and global frequency-domain information to generate task-adaptive representations.
