@@ -5,9 +5,26 @@
 TASC-SwinMT is a unified multi-task learning framework tailored for **lung CT** and **cardiac MRI**, which jointly accomplishes **image interpolation** and **multi-frame segmentation** tasks. It addresses critical limitations of conventional methods, such as computational redundancy, insufficient exploitation of spatiotemporal shared features, lack of anatomical constraints for interpolation, and absence of temporal context for segmentation.
 
 Built upon the **Swin Transformer** backbone, the framework adopts a **shared SwinUNet encoder** to extract universal spatial features from paired input frames, and deploys two task-specific decoders to predict intermediate interpolated frames and segmentation masks respectively. Three dedicated collaborative modules are designed to boost cross-task learning:
+
+### 🧩 Overall Framework (模型总结构图)
+<center>
+<img src="figures/overall_framework.png" width="85%" alt="TASC-SwinMT Overall Framework">
+</center>
+
 - **TALA (Task-Aware Lightweight Adapter)**: Captures spatial dual-bottleneck features and global frequency-domain information to generate task-adaptive representations.
+  <center>
+  <img src="figures/TALA_module.png" width="70%" alt="TALA Module Architecture">
+  </center>
+
 - **MSTAF (Multi-Scale Task Alignment Fusion)**: Aligns cross-level feature distributions via bidirectional cross-attention, multi-scale spatial extraction, and frequency enhancement.
+  <center>
+  <img src="figures/MSTAF_module.png" width="70%" alt="MSTAF Module Architecture">
+  </center>
+
 - **CTCI (Cross-Task Collaborative Interaction)**: Enables fine-grained cross-task feature interaction by integrating spatial extraction, frequency alignment, and dynamic gating fusion.
+  <center>
+  <img src="figures/CTCI_module.png" width="70%" alt="CTCI Module Architecture">
+  </center>
 
 A **learnable dynamic multi-task loss** is employed to adaptively balance pixel-level interpolation reconstruction and segmentation classification optimization, avoiding training bias toward either task.
 
