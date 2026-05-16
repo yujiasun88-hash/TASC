@@ -66,7 +66,7 @@ Task06_Lung/
 ### Training Command
 Navigate to the code directory and run the training script:
 ```bash
-cd CODE
+cd TASC-main
 python train.py
 ```
 
