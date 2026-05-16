@@ -6,7 +6,7 @@ TASC-SwinMT is a unified multi-task learning framework tailored for **lung CT** 
 
 Built upon the **Swin Transformer** backbone, the framework adopts a **shared SwinUNet encoder** to extract universal spatial features from paired input frames, and deploys two task-specific decoders to predict intermediate interpolated frames and segmentation masks respectively. Three dedicated collaborative modules are designed to boost cross-task learning:
 
-### 🧩 Overall Framework (模型总结构图)
+### 🧩 Overall Framework
 <center>
 <img src="figures/overall_framework.png" width="85%" alt="TASC-SwinMT Overall Framework">
 </center>
@@ -146,6 +146,3 @@ Heart_results/
 └── test_summary.csv
 ```
 ```
-   `All data used in this project are available on the MSD challenge page: http://medicaldecathlon.com/dataaws/`
-2. **格式兼容**：无任何语法错误，图片路径、代码块、标题格式完全保留
-3. **使用方式**：直接复制全文即可，图片依旧按照之前的 `figures` 文件夹存放即可正常显示
