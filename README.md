@@ -1,8 +1,8 @@
 # TASC-SwinMT
-**Task-Adaptive Synergistic Cross-Task Swin Multi-Task Framework for Lung CT and Cardiac MRI Image Interpolation and Segmentation**
+**Task-Adaptive Synergistic Cross-Task Swin Multi-Task Framework for CT and MRI Image Interpolation and Segmentation**
 
 ## 1. Model Introduction
-TASC-SwinMT is a unified multi-task learning framework tailored for **lung CT** and **cardiac MRI**, which jointly accomplishes **image interpolation** and **multi-frame segmentation** tasks. It addresses critical limitations of conventional methods, such as computational redundancy, insufficient exploitation of spatiotemporal shared features, lack of anatomical constraints for interpolation, and absence of temporal context for segmentation.
+TASC-SwinMT is a unified multi-task learning framework tailored for **CT** and **MRI**, which jointly accomplishes **image interpolation** and **multi-frame segmentation** tasks. It addresses critical limitations of conventional methods, such as computational redundancy, insufficient exploitation of spatiotemporal shared features, lack of anatomical constraints for interpolation, and absence of temporal context for segmentation.
 
 Built upon the **Swin Transformer** backbone, the framework adopts a **shared SwinUNet encoder** to extract universal spatial features from paired input frames, and deploys two task-specific decoders to predict intermediate interpolated frames and segmentation masks respectively. Three dedicated collaborative modules are designed to boost cross-task learning:
 
